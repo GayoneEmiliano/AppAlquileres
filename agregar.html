@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agregar Inmueble</title>
+</head>
+<body>
+    <div class="background">
+        <div class="modal">
+            <section class="left">
+                <div class="title">
+                    <h1>Agregar inmuebles</h1>
+                </div>
+            </section>
+            <section class="right">
+                <div class="form-container">
+                    <form id="add" action="./functionGuardar.php" method="post" class="form">
+                        <label for="name" class="label">Ingrese nombre del inmueble</label>
+                        <input id="nombre" name="name" type="text" class="input" placeholder="Ingrese el nombre">
+
+                        <label for="ubicacion" class="label">Ubicacion del inmueble</label>
+                        <input id="ubicacion" name="ubicacion" type="text" class="input" placeholder="Ingrese la ubicacion">
+
+                        <label for="ambientes" class="label">Cantidad de ambientes</label>
+                        <input id="ambientes" type="number" name="ambientes" class="input" placeholder="Ingrese los ambientes">
+
+                        <label for="precio" class="label">Precio del inmueble</label>
+                        <input id="precio" type="number" class="input" name="precio" placeholder="Ingrese el precio">
+
+                        <button type="submit" class="enviar">Guardar</button>
+
+                    </form>
+
+                    <a href="./index.html" class="close">Cerrar</a>
+                </div>
+
+                <div class="res" id="Respuesta">
+
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+
+
+</html>
+
